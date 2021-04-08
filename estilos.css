@@ -1,0 +1,254 @@
+/* estilos generales*/
+@font-face {
+    font-family: "Ubuntu";
+    src: url(/fonts/Ubuntu-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Ubuntu";
+    margin: 0;
+    background: #161227;
+}
+.container{
+    margin: auto;
+    width: 100%;
+}
+/* estilos header*/
+.logo__img{
+    width: 50px;
+    object-fit: cover;
+}
+.container-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+}
+.container-social{
+    display: block;
+    text-align: center;
+}
+.facebook__icono{
+    color: #4A71BA;
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+.twitter__icono{
+    color: #23DFFA;
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+.instagram__icono{
+    color: #DE0935;
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+.texto__iconos{
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.menu{
+    background: #3C3C53;
+}
+.menu__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+.nav__input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__link{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+.menu__link:hover{
+    color: #E6074F;
+    transition: .5s;
+}
+.input__nav{
+    list-style: none;
+}
+.input__search{
+    border: #E6074F solid 2px;
+    height: 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #161227;
+    position: relative;
+}
+.icono__search{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* estilos main*/
+.filter__section{
+    background: #3C3C53;
+    margin-top: 30px;
+    max-height: 250px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.filter__title{
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    border-bottom: 2px solid #6AA1E5;
+    
+}
+.filter__title h1{
+    font-size: 1.2rem;
+}
+.filter__title i{
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+.filter__list{
+    list-style: none;
+    padding: 20px;
+}
+.filter__link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.filter__link:hover{
+    color: #DE0935;
+    transition: .4s;
+}
+.filter__link i{
+    color: #DE0935;
+}
+.filter__item{
+    padding: 10px;
+}
+.anime__list{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.anime__imagen{
+    width: 300px;
+    height: 360px;
+    padding: 30px;
+    object-fit: cover;
+}
+.seccion__anime{
+    background: #211D33;
+    margin-top: 30px;
+    position: relative;
+    
+}
+.seccion__secundaria{
+    position: relative;
+    left: 123px;
+}
+.anime__item{
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+.anime__title{
+    font-size: 0.9rem;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    margin: 20px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #E6074F;
+    width: 180px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* estilos footer*/
+.footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: #211D33;
+    margin-top: 40px;
+}
+.footer__main{
+    background: #3C3C53;
+    text-align: center;
+    
+}
+.footer__section h1{
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+}
+.footer__section p{
+    font-size: .9rem;
+    font-weight: bold;
+    color: #DED7E7;
+}
+.link__top{
+    text-decoration: none;
+    color: #E6074F;
+}
+/* responsividad*/
+@media(min-width:1000px){
+    .container--flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column--25{
+        width: 25%;
+        max-width: 250px;
+    }
+    .column--50{
+        width: 47%;
+    }
+    .column--75{
+        width: 74%;
+    }
+    .filter__title i{
+        cursor: text;
+    }
+    .column--33{
+        width: 32%;
+    }
+    
+}
+@media (max-width:1000px) {
+    .filter__content{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .seccion__secundaria{
+        left: 0;
+    }
+    .anime__title{
+        padding-top: 20px;
+    }
+    .filter__section{
+        margin-left: 0;
+    }
+}
